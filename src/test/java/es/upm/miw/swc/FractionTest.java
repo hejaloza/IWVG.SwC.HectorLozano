@@ -17,8 +17,19 @@ public class FractionTest {
 	}
 
 	@Test
-	public void testFraccionNumeradorDenominador() {
+	public void testFraction() {
+		frac = new Fraction();
+		assertEquals(1, frac.getNumerator());
+		assertEquals(1, frac.getDenominator());
+	}
+
+	@Test
+	public void testFraccionNumerador() {
 		assertEquals(2, frac.getNumerator());
+	}
+
+	@Test
+	public void testFraccionDenominador() {
 		assertEquals(3, frac.getDenominator());
 	}
 
