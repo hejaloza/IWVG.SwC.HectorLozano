@@ -47,5 +47,10 @@ public class UserTest {
 	public void testGetFamilyName() {
 		assertEquals("Lozano", usuario.getFamilyName());
 	}
+	
+	@Test
+	public void testNombreLowerCase() {
+		assertEquals("hector", usuario.nombreLowerCase());
+	}
 
 }
