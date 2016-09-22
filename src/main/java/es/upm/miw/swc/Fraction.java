@@ -59,5 +59,9 @@ public class Fraction {
 	public double decimal() {
 		return (double) numerator / denominator;
 	}
+	
+	public int denominadorAddOne() {
+		return this.denominator + 1;
+	}
 
 }

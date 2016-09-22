@@ -37,5 +37,10 @@ public class FractionTest {
 	public void testDecimal() {
 		assertEquals(0.66, frac.decimal(), 10e-3);
 	}
+	
+	@Test
+	public void testDenominadorAddOne() {
+		assertEquals(4, frac.denominadorAddOne());
+	}
 
 }
