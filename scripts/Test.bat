@@ -1,7 +1,7 @@
 @echo off
 :: Con :: se establecen comentarios
 ::set se definen variables
-set workspace=C:\Workspace\IWVG.SwC.HectorLozanoBriones
+set workspace=C:\Workspace\IWVG.SwC.HectorJahirLozanoBriones
 ::Las variables de entorno se pueden configurar directamente en Windows cuando se tienen los permisos necesarios
 set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_51
 set M2_HOME=C:\Users\bl0809\Desktop\ArchivosPrograma\apache-maven-3.3.9
