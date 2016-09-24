@@ -63,5 +63,9 @@ public class Fraction {
 	public int denominadorAddOne() {
 		return this.denominator + 1;
 	}
+	
+	public int timesFractionElements() {
+		return this.denominator * this.numerator;
+	}
 
 }

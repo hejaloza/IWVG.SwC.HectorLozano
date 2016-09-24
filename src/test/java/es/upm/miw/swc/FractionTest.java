@@ -42,5 +42,10 @@ public class FractionTest {
 	public void testDenominadorAddOne() {
 		assertEquals(4, frac.denominadorAddOne());
 	}
+	
+	@Test
+	public void testTimesFractionElements() {
+		assertEquals(6, this.frac.timesFractionElements());
+	}
 
 }
