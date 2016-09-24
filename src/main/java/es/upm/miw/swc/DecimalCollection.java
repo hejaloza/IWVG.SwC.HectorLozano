@@ -35,4 +35,11 @@ public class DecimalCollection {
 		return higher;
 	}
 
+	public double first() {
+		try {
+			return this.collection.get(0);
+		}catch(Exception e){
+			return Double.NEGATIVE_INFINITY;
+		}
+	}
 }

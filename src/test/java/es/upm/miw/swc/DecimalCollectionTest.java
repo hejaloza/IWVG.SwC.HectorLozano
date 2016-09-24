@@ -40,4 +40,14 @@ public class DecimalCollectionTest {
 		assertEquals(3, this.dc.higher(), 10e-5);
 	}
 
+	@Test
+	public void testFirstSuccess(){
+		assertEquals(2.0, this.dc.first(), 10e-5);
+	}
+	
+	@Test
+	public void testFirstEmptyCollection(){
+		DecimalCollection emptyCollection = new DecimalCollection();
+		assertEquals(Double.NEGATIVE_INFINITY, emptyCollection.first(), 10e-5);
+	}
 }
