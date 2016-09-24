@@ -49,5 +49,11 @@ public class PointTest {
     public void testToString() {
         assertEquals("Point[2,3]", pt.toString());
     }
+    
+    @Test
+    public void testAddTenToX() {
+    	assertEquals(12, pt.addTenToX(), 10e-5);
+    	assertEquals(12, pt.getX(), 10e-5);
+    }
 
 }
