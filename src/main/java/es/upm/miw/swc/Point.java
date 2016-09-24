@@ -41,5 +41,10 @@ public class Point {
 	public String toString() {
 		return "Point[" + x + "," + y + "]";
 	}
+	
+	public int addTenToX() {
+		this.x += 10;
+		return this.x;
+	}
 
 }
