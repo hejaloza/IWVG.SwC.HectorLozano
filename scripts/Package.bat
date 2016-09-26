@@ -8,19 +8,20 @@ set M2_HOME=C:\Users\Jahir\Desktop\MIW-Proyectos\apache-maven-3.3.9
 :: %var% se accede a una variable
 set PATH=%PATH%;%JAVA_HOME%\bin;%M2_HOME%\bin
 ::echo saca por pantalla un mensaje
-echo -----------------------------------------
+echo ------------------------------------------
 echo . (C) MIW
-echo -----------------------------------------
+echo ------------------------------------------
 echo .
 echo Workspace --- %workspace%
 echo JAVA_HOME --- %JAVA_HOME%
 echo M2_HOME   --- %M2_HOME%
 echo .
 cd %workspace%
-echo ============ mvn --version =======================================================
+echo ==== :: Se ejecuta un comando maven: mvn clean test (profile: develop)=======
+call mvn clean test
 echo .
-:: Se ejecuta un comando maven
-call mvn test
+echo ==== :: Se ejecuta un comando maven: mvn package -Denvironment.type=preproduction en (profile: preproduction) =======
+call mvn package -Denvironment.type=preproduction
 echo .
 ::Se queda la consola abierta para realizar comandos en línea
 cmd /k
