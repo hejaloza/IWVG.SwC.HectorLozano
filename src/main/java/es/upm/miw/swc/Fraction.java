@@ -67,5 +67,9 @@ public class Fraction {
 	public int timesFractionElements() {
 		return this.denominator * this.numerator;
 	}
+	
+	public int numPlusDen() {
+		return (int) (this.numerator + this.denominator) / 2; 
+	}
 
 }

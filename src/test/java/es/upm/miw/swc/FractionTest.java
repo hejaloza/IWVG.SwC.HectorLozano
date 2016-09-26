@@ -47,5 +47,10 @@ public class FractionTest {
 	public void testTimesFractionElements() {
 		assertEquals(6, this.frac.timesFractionElements());
 	}
+	
+	@Test
+	public void testNumPlusDen() {
+		assertEquals(2, this.frac.numPlusDen(), 10e-5);
+	}
 
 }
